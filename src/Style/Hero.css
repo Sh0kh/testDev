@@ -1,0 +1,78 @@
+.Hero{
+    margin-top: 350px;
+    margin-bottom: 200px;
+}
+.Hero h1{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.Hero h2{
+    color: white;
+    width: 950px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+}
+.Hero h1 span{
+    color: #1668C1;
+}
+.Hero__subtitle{
+    text-align: center;
+    display: block;
+    color: rgba(136, 136, 136, 0.733);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.Hero button{
+    margin:  0 auto;
+    display: block;
+    margin-top: 50px;
+    padding: 10px 20px ;
+    background-color: #1668C1;
+    border: none;
+    color: white;
+    font-size: bold;
+    border-radius: 10px ;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #1668C1;
+    transition: 0.5s     ;
+}
+.Hero button:hover{
+    background-color: transparent;
+    color: #1668C1;
+}
+@media(max-width:970px){
+    .Hero h2{
+        width: auto;
+    }
+}
+@media(max-width:750px){
+    .Hero h2{
+        font-size: 35px;
+    }
+}
+@media(max-width:600px){
+    .Hero h2{
+        font-size: 25px;
+    }
+    .Hero h1{
+        font-size: 40px;
+    }
+    .Hero{
+        margin-top: 150px;
+    }
+}
+@media(max-width:430px){
+    .Hero h2{
+        font-size: 20px;
+    }
+    .Hero button{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}

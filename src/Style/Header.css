@@ -1,0 +1,317 @@
+header{
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #07081A;
+    z-index: 10;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-nav nav{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.header-nav__line{
+    height: 50px;
+    width: 1px;
+    background-color: rgb(248, 248, 248);
+    /* margin: 0 5px; */
+}
+.header-nav nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+.header-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.header-lan{
+    display: flex;
+    
+   flex-direction: column;
+}
+.header-lan button{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 5px;
+    background-color: #1668C1;
+    border: 1px solid #1668C1;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    width: 60px;
+}
+.header-lan-modal button{
+    /* display: block; */
+    width: 100%;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 5px;
+    background-color: #1668C1;
+    border: 1px solid #1668C1;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+header select{
+    background-color: #1668C1;
+    padding: 11px 10px ;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+.header-value{
+    background-color: #323459;
+    padding-top: 10px !important;
+}
+.header-btn__contact{
+    padding: 8px 10px;
+    background-color: #1668C1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #1668C1;
+   gap: 5px;
+   transition: 0.5s;
+   cursor: pointer;
+   font-weight: bold;
+}
+.header-btn__contact svg{
+    font-size: 20px;
+}
+.header-btn__contact:hover{
+    background-color: transparent;
+    color: #1668C1;
+}
+.Mobile{
+    display: none;
+}
+.mobile-modal{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	height: 100vh;
+    background-color: #323459;
+    padding: 24px;
+    overflow-y: auto;
+    transform: translateX(-100%);
+	transition: all 2s ease;
+    z-index: 11;
+}
+.mobile-modal-shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, .5);
+    transform: translateX(-100%);
+    transition: all .6s cubic-bezier(0.45, 0.48, 0.75, 0.76) 1s;
+    visibility: visible;
+    z-index: 10;
+}
+.db{
+    transform: translateX(0);
+}
+.db_shadow{
+    transform: translateX(0);
+    transition: all .6s cubic-bezier(.22,.61,.24,1) 0s;
+}
+.Mobile{
+    position: relative;
+    z-index: 12;
+}
+.mobile-main nav a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-size: bold;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: block;
+    margin-top: 40px;
+}
+.mobile-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header-modal-contact__shadow{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.541);
+    transform: translateY(-100%);
+    transition: all .6s cubic-bezier(0, -0.35, 1, 1.44);
+    z-index: 25;
+}
+.header-modal-contact__content{
+    position: fixed;
+    overflow: hidden;
+    z-index: 26;
+    top: 26%;
+    left: 32%;
+    background-color: white;
+    transform: translateY(-1000%);
+    transition: all  linear 0.5s;
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.header-modal-contact__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-modal-contact__title button{
+    background-color: #1668C1;
+    border: #1668C1 2px solid ;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header-modal-contact__title button:hover{
+    background-color: transparent;
+    color: #1668C1;
+}
+.header-modal-contact__title h1{
+    font-family: "Roboto Mono", monospace;
+}
+.contact_active{
+    transform: translateY(0%);
+}
+header form label{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+header form label input {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: #1668C1 solid 2px ;
+    border-radius: 10px;
+    outline: #1668C1;
+}
+header form h3{
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+header form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: #1668C1 solid 2px ;
+    border-radius: 10px;
+    outline: #1668C1;
+    resize: none;  /* Запрещает изменение размеров */
+}
+header form button{
+    padding: 10px 20px ;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #1668C1;
+    border: 2px solid #1668C1;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+header form button:hover{
+    color: #1668C1;
+    background-color: transparent;
+}
+.mobile-main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+@media(max-width:1280px){
+    .header-nav {
+        display: none;
+    }
+    .Mobile{
+        display: block;
+    }
+}
+@media(max-width:1400px){
+    .header-modal-contact__content{
+        left: 25% !important;
+    }
+}
+@media(max-width:1200px){
+    .header-modal-contact__content{
+        left: 20% !important;
+    }
+}
+@media(max-width:1050px){
+    .header-modal-contact__content{
+        left: 15% !important;
+    }
+}
+@media(max-width:900px){
+    .header-modal-contact__content{
+        left: 10% !important;
+    }
+}
+@media(max-width:820px){
+    .header-modal-contact__content{
+        left: 5% !important;
+        right:5% !important;
+        width: 90%;
+    }
+}

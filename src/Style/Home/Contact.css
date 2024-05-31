@@ -1,0 +1,137 @@
+.Contact{
+    /* margin-bottom: 500px; */
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+    height: 1000px;
+}
+.Contact h1{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.Contact form{
+    text-align: center;
+}
+.Contact form label h3{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+}
+.Contact form label{
+    width: 100%;
+}
+.Contact form label input{
+    width: 400px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: #1668C1 solid 2px ;
+    border-radius: 10px;
+    outline: #1668C1;
+    margin: 10px 0;
+}
+.Contact form label textarea{
+    width: 400px;
+    height: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: #1668C1 solid 2px ;
+    border-radius: 10px;
+    outline: #1668C1;
+    resize: none; 
+    display: block;
+    margin: 10px auto;
+}
+.Contact form button{
+    padding: 10px 20px ;
+    width: 150px;
+    margin-top: 20px;
+    background-color: #1668C1;
+    border: 2px solid #1668C1;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Contact form button:hover{
+    background-color: transparent;
+    color: #1668C1;
+}
+.contact-img1{
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    cursor: pointer;
+}
+.contact-img2{
+    position: absolute;
+    top: 190px;
+    right: 100px;
+    width: 500px;
+    cursor: pointer;
+}
+@media(max-width:1630px){
+    .contact-img1{
+        left: 50px;
+    }
+    .contact-img2{
+        right: 50px;
+    }
+}
+@media(max-width:1490px){
+    .contact-img1{
+        left: 10px;
+    }
+    .contact-img2{
+        right: 10px;
+    }
+}
+@media(max-width:1420px){
+    .contact-img1{
+        left: 5px;
+        width:400px;
+    }
+    .contact-img2{
+        right:5px;
+        width:400px;
+    }
+}
+@media(max-width:1220px){
+    .contact-img1{
+        left: 5px;
+        width:300px;
+    }
+    .contact-img2{
+        right:5px;
+        width:300px;
+    }
+}
+@media(max-width:1040px){
+    .contact-img1{
+       display: none;
+    }
+    .contact-img2{
+       display: none;
+    }
+    .Contact{
+        margin-bottom: 50px;
+        height: auto;
+    }
+}
+@media(max-width:600px){
+    .Contact h1{
+        font-size: 40px;
+        
+    }
+}
+@media(max-width:430px){
+  .Contact form input{
+    width: 100% !important;
+  }
+  .Contact form textarea{
+    width: 100% !important;
+  }
+}

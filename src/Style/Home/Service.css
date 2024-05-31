@@ -1,0 +1,107 @@
+.Service{
+    margin-bottom: 200px;
+}
+.Service-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Service h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 10px;
+}
+.Service-content h2{
+    color: white;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 20px;
+}
+.Service-content p{
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    width: 650px;
+    margin-bottom: 20px;
+}
+.Service-content button{
+    display: block;
+    margin-top: 50px;
+    padding: 10px 20px ;
+    background-color: #1668C1;
+    border: none;
+    color: white;
+    font-size: bold;
+    border-radius: 10px ;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #1668C1;
+    transition: 0.5s     ;
+}
+.Service-content button:hover{
+    background-color: transparent;
+    color: #1668C1;
+}
+.Service-content2__header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.Service-content2__header button{
+    display: block;
+    padding: 10px 20px ;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: bold;
+    border-radius: 10px ;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #1668C1;
+    transition: 0.5s     ;
+}
+button.ActiveBtn{
+    background-color: #1668C1;
+    color: white;
+}
+@media(max-width:1500px){
+    .Service-content2 img{
+        width: 100%;
+    }
+}
+@media(max-width:1280px){
+   .Service-wrapper{
+    flex-direction: column;
+   }
+   .Service-content{
+    text-align: center;
+    margin-top: 50px;
+   }
+   .Service-content p{
+    width: 100%;
+   }
+   .Service-content button{
+    margin: 0 auto;
+   }
+}
+@media(max-width:650px){
+    .Service-content2__header{
+       justify-content: space-between;
+       gap: 0;
+    }
+}
+@media(max-width:450px){
+    .Service-content2__header{
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .Service-content2__header button{
+        font-size: 15px;
+    }
+}
