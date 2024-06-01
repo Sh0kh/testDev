@@ -1,9 +1,8 @@
 import React from 'react'
-import '../../Style/Hero.css'
+import '../../Style/Service/Hero.css'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { NavLink } from 'react-router-dom';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 function Hero() {
@@ -26,10 +25,10 @@ function Hero() {
         )
     })
   return (
-    <section className='Hero'>
+    <section className='Service__hero'>
         <div className='container'>
-            <h1 className='hero__title'>
-                Devo<span>soft</span>
+        <h1 className='hero__title'>
+            Ser<span>vice</span>
             </h1>
             <h2 className='hero__text'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et voluptas officiis. Itaque eum qua met.sit 
@@ -37,9 +36,9 @@ function Hero() {
             <span className='Hero__subtitle'>
                 Lorem ipsum dolor sit amet.
             </span>
-            <NavLink to="/Service" className='Hero__button'>
-            Xizmatlar
-            </NavLink>
+            <button className='Hero__button'>
+                Bog`lanish
+            </button>
         </div>
     </section>
   )

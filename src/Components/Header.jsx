@@ -3,6 +3,7 @@ import '../Style/Header.css'
 import header_logo from '../img/Logo.png'
 import Hamburger from 'hamburger-react'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 function Header() {
@@ -16,6 +17,13 @@ function Header() {
     const ContactModal = ()=>{
         setContact(!isContact)
     }
+    const ScTop = () => {
+        window.scrollTo(0, 0);
+    }
+    const handleNavClick = () => {
+        MobileModal();
+        ScTop();
+    };
     return (
         <header>
             <div className='container'>
@@ -25,10 +33,18 @@ function Header() {
                     </div>
                     <div className='header-nav'>
                         <nav>
-                            <a href="!#">Bosh sahifa</a>
-                            <a href="!#">Biz haqimizda</a>
-                            <a href="!#">Xizmatlar</a>
-                            <a href="!#">Portfolio</a>
+                            <NavLink onClick={ScTop} to="/">
+                                Bosh sahifa
+                            </NavLink>
+                            <NavLink onClick={ScTop} to="/AboutUs">
+                                 Biz haqimizda
+                            </NavLink>
+                            <NavLink onClick={ScTop} to="/Service">
+                                Xizmatlar
+                            </NavLink>
+                            <NavLink onClick={ScTop} to="/Portfolio">
+                            Portfolio
+                            </NavLink>
                         </nav>
                         <div className='header-nav__line'></div>
                         <div className='header-btn'>
@@ -43,7 +59,7 @@ function Header() {
                         </div>
                     </div>
                     <div className='Mobile' onClick={MobileModal}>
-                        <Hamburger  color='white'/>
+                        <Hamburger toggled={isButton} toggle={setButton}  color='white'/>
                     </div>
                     <div className={`mobile-modal ${isButton ? 'db' : ''}`}>
                         <div className='mobile-modal-header'>
@@ -51,10 +67,18 @@ function Header() {
                         </div>
                         <div className='mobile-main'>
                         <nav>
-                            <a href="!#">Bosh sahifa</a>
-                            <a href="!#">Biz haqimizda</a>
-                            <a href="!#">Xizmatlar</a>
-                            <a href="!#">Portfolio</a>
+                        <NavLink onClick={handleNavClick} to="/">
+                                Bosh sahifa
+                            </NavLink>
+                            <NavLink onClick={handleNavClick} to="/AboutUs">
+                                 Biz haqimizda
+                            </NavLink>
+                            <NavLink onClick={handleNavClick} to="/Service">
+                                Xizmatlar
+                            </NavLink>
+                            <NavLink onClick={handleNavClick} to="/Portfolio">
+                            Portfolio
+                            </NavLink>
                         </nav>
                         <button onClick={ContactModal} className='header-btn__contact'>
                                 Bog`lanish <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>

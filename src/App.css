@@ -24,3 +24,6 @@ body{
   background: #1668C1;
   border-radius: 15px;
 }
+a{
+  text-decoration: none;
+}

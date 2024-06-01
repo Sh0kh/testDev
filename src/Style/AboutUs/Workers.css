@@ -1,0 +1,114 @@
+.Workers{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.Workers h1{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.Workers h1 span{
+    color: #1668C1;
+}
+.Workers p{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+.Workers-content{
+    margin-bottom: 30px;
+}
+.Workers-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.workers-card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    padding-top: 305px;
+    margin: 0 auto;
+}
+.workers-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.worker-card-content{
+    position: relative;
+    z-index: 2;
+    background-color: #b75417cc;
+    padding: 20px;
+    text-align: center;
+}
+.worker-card-content h2{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+.worker-card-content h3{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+.workers-card-bg{
+    background-color: rgba(0, 0, 0, 0.815);
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+}
+.card-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card-media svg{
+    font-size: 40px;
+    color: #1668C1;
+}
+.workers-card:hover{
+    .workers-card-bg{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:1530px){
+    .Workers-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:1170px){
+    .Workers-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:742px){
+    .Workers-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:600px){
+   .Workers h1{
+    font-size: 40px;
+   }
+}
+@media(max-width:370px){
+ .workers-card{
+    width: 100%;
+    height: 100%;
+ }
+}
