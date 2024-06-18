@@ -2,11 +2,26 @@ import React from 'react'
 import '../Style/Header.css'
 import header_logo from '../img/Logo.png'
 import Hamburger from 'hamburger-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
-
-
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 function Header() {
+    useEffect(() => {
+        const tl = gsap.timeline();
+        tl.fromTo(".header_nav1", { y: '200%', opacity: 0 }, { y: '0%', opacity: 1,  })
+          .fromTo(".header_nav2", { y: '200%', opacity: 0 }, { y: '0%', opacity: 1, })
+          .fromTo(".header_nav3", { y: '200%', opacity: 0 }, { y: '0%', opacity: 1,  })
+          .fromTo(".header_nav4", { y: '200%', opacity: 0 }, { y: '0%', opacity: 1,  })
+          .fromTo(".header_nav5", { y: '200%', opacity: 0 }, { y: '0%', opacity: 1,  })
+          .fromTo(".header_nav6", { y: '200%', opacity: 0 }, { y: '0%', opacity: 1,  });
+          
+      }, []);
+
+
+
     const [isButton, setButton] = useState(false)
     const [isContact, setContact] = useState(null)
 
@@ -33,27 +48,27 @@ function Header() {
                     </div>
                     <div className='header-nav'>
                         <nav>
-                            <NavLink onClick={ScTop} to="/">
+                            <NavLink className='header_nav1' onClick={ScTop} to="/">
                                 Bosh sahifa
                             </NavLink>
-                            <NavLink onClick={ScTop} to="/AboutUs">
+                            <NavLink className='header_nav2' onClick={ScTop} to="/AboutUs">
                                  Biz haqimizda
                             </NavLink>
-                            <NavLink onClick={ScTop} to="/Service">
+                            <NavLink className='header_nav3' onClick={ScTop} to="/Service">
                                 Xizmatlar
                             </NavLink>
-                            <NavLink onClick={ScTop} to="/Portfolio">
+                            <NavLink className='header_nav4' onClick={ScTop} to="/Portfolio">
                             Portfolio
                             </NavLink>
                         </nav>
                         <div className='header-nav__line'></div>
                         <div className='header-btn'>
-                            <select name="" id="">
+                            <select className='header_nav5' name="" id="">
                                 <option className='header-value' value="val1">Uzb</option>
                                 <option className='header-value' value="val2" selected>Rus</option>
                                 <option className='header-value' value="val3">Eng</option>
                             </select>
-                            <button onClick={ContactModal} className='header-btn__contact'>
+                            <button onClick={ContactModal} className='header-btn__contact header_nav6'>
                                 Bog`lanish <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>
                             </button>
                         </div>

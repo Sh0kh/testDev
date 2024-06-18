@@ -101,7 +101,6 @@ header select{
     align-items: center;
     border: 2px solid #1668C1;
    gap: 5px;
-   transition: 0.5s;
    cursor: pointer;
    font-weight: bold;
 }
@@ -279,6 +278,9 @@ header form button:hover{
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+.header_nav6{
+    transition: 0 !important;
 }
 @media(max-width:1280px){
     .header-nav {

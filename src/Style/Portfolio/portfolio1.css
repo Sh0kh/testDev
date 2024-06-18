@@ -1,0 +1,309 @@
+.Portfolio1{
+    /* margin-top: 50px; */
+    margin-bottom: 100px;
+}
+.port__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.port__card{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(19, 3, 250, 0.692);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.port__card:hover{
+    .card-over{
+        background-color: rgba(22, 103, 193,0.466);
+
+    }
+    .Card-title{
+        transform: translateY(0%);
+        opacity: 2;
+    }
+}
+.port__card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-over{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 25px;
+}
+.Card-title{
+    color: white;
+    transform: translateY(200%);
+    transition: all  linear 0.5s;
+    opacity: 0;
+}
+.port-card1{
+    width: 500px;
+}
+.port-card2{
+    width: 400px;
+}
+.port-card3{
+    width: 600px;
+}
+.port-card4{
+    width: 350px;
+}
+.port-card5{
+    width: 750px;
+}
+.port-card6{
+    width: 400px;
+}
+.port-card7{
+
+    width: 500px;
+}
+.port-card8{
+    width: 350px;
+}
+.port-card9{
+    width: 650px;
+}
+@media(max-width:1200px){
+    .port-card1{
+        height: 250px;
+    }
+    .port-card2{
+        height: 250px;
+    }
+    .port-card3{
+        height: 250px;
+    }
+    .port-card4{
+        height: 250px;
+    }
+    .port-card5{
+        height: 250px;
+    }
+    .port-card6{
+        height: 250px;
+    }
+    .port-card7{
+    
+        height: 250px;
+    }
+    .port-card8{
+        height: 250px;
+    }
+    .port-card9{
+        height: 250px;
+    }
+}
+@media(max-width:970px){
+    .port-card1{
+        height: 200px;
+    }
+    .port-card2{
+        height: 200px;
+    }
+    .port-card3{
+        height: 200px;
+    }
+    .port-card4{
+        height: 200px;
+    }
+    .port-card5{
+        height: 200px;
+    }
+    .port-card6{
+        height: 200px;
+    }
+    .port-card7{
+    
+        height: 200px;
+    }
+    .port-card8{
+        height: 200px;
+    }
+    .port-card9{
+        height: 200px;
+    }
+}
+@media(max-width:700px){
+    .port__wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .port-card1{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card2{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card3{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card4{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card5{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card6{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card7{
+    
+        height: 300px;
+        width: 600px;
+    }
+    .port-card8{
+        height: 300px;
+        width: 600px;
+    }
+    .port-card9{
+        height: 300px;
+        width: 600px;
+    }
+}
+@media(max-width:620px){
+    .port__wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .port-card1{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card2{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card3{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card4{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card5{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card6{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card7{
+    
+        height: 300px;
+        width: 500px;
+    }
+    .port-card8{
+        height: 300px;
+        width: 500px;
+    }
+    .port-card9{
+        height: 300px;
+        width: 500px;
+    }
+}
+@media(max-width:520px){
+    .port__wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .port-card1{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card2{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card3{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card4{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card5{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card6{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card7{
+    
+        height: 300px;
+        width: 400px;
+    }
+    .port-card8{
+        height: 300px;
+        width: 400px;
+    }
+    .port-card9{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media(max-width:420px){
+    .port__wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .port-card1{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card2{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card3{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card4{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card5{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card6{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card7{
+    
+        height: 200px;
+        width: 300px;
+    }
+    .port-card8{
+        height: 200px;
+        width: 300px;
+    }
+    .port-card9{
+        height: 200px;
+        width: 300px;
+    }
+}
